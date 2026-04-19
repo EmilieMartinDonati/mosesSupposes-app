@@ -15,7 +15,7 @@ type HeaderProps = {
   actions: Action[]
 };
 
-export default function Header({ title, logo, actions }: HeaderProps) {
+export default function HomeHeader({ title, logo, actions }: HeaderProps) {
 
   return (
     <View style={styles.header}>
@@ -38,11 +38,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     padding: 16,
-    position: "fixed",
-    top: 0,
-    left: 0,
-    backgroundColor: Colors.light.header,
-    color: "white"
+    backgroundColor: Colors.light.mainBlue,
+    color: "white",
+    height: 55.5
   },
 
   left: {

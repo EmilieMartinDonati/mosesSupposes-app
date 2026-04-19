@@ -15,15 +15,19 @@ const chocolate = '#3e2723';
 const honey = '#e6b566';
 const paleRose = '#e8a3a3';
 const waterGreen = '#a8d5c3';
+const faintWarmWhite = "#faf7f4"
 
 export const Colors = {
   light: {
     background: mainBeige,
-    header: mainBlue,
+    mainBlue: mainBlue,
     chocolate: chocolate,
     honey: honey,
     paleRose: paleRose,
     waterGreen: waterGreen,
+    faintWarmWhite: faintWarmWhite,
+    mainBeige: mainBeige,
+    elevatedBeige: elevatedBeige,
     text: '#11181C',
     tint: tintColorLight,
     icon: '#687076',

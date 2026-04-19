@@ -55,9 +55,14 @@ export async function getWritingWorkshopsByVisibility({ onlyPublic = false, visi
     }
 }
 
-export const getWritingWorkshopById = async ({ writingWorkshopId }: { writingWorkshopId: string }) => {
+export const getWritingWorkshopById = async (writingWorkshopId: string) => {
     try {
-        await supabase.from("writing_workshops").select("*").eq("id", writingWorkshopId).single()
+        const { data: writingWorkshop, error} = await supabase.from("writing_workshops").select("*").eq("id", writingWorkshopId).single()
+
+        if (error) {
+            throw(error)
+        }
+        return writingWorkshop
     }
     catch (e) {
         console.error(`erreur getting writingWorkshopById with writingWorkshopId ${writingWorkshopId}`)
