@@ -8,10 +8,23 @@ import { Platform } from 'react-native';
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
+const mainBlue = '#6f8fa3';
+const mainBeige = '#f1e9df';
+const elevatedBeige = '#eadfce';
+const chocolate = '#3e2723';
+const honey = '#e6b566';
+const paleRose = '#e8a3a3';
+const waterGreen = '#a8d5c3';
+
 export const Colors = {
   light: {
+    background: mainBeige,
+    header: mainBlue,
+    chocolate: chocolate,
+    honey: honey,
+    paleRose: paleRose,
+    waterGreen: waterGreen,
     text: '#11181C',
-    background: '#fff',
     tint: tintColorLight,
     icon: '#687076',
     tabIconDefault: '#687076',
